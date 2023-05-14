@@ -40,10 +40,27 @@
                   <div class="row">
                      <div class="col-md-12 col-sm-12">
                         <div class="main-title">
-                           <h1>User List</h1>
-                           <div class="button"><a href="#">+ Add New User</a></div>
+                           <h1>Payment Report</h1>
                         </div>
                      </div>
+                  </div>
+               </div>
+               <div class="patient_detail search report">
+                  <div class="row">
+                     <form>
+                        <div class="d-flex">
+                           <div class="mail_icon"><a href="#"><img src="images/mail.png" alt="" /></a></div>
+                           <div class="button"><a href="#">Get Report</a></div>
+                           <div class="input_div">
+                              <label>To Date</label>
+                              <input type="date" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>From Date</label>
+                              <input type="date" class="form-control" placeholder="">
+                           </div>
+                        </div>
+                     </form>
                   </div>
                </div>
                <div class="userlist_table">
@@ -52,86 +69,46 @@
                         <table class="table">
                            <thead>
                               <tr>
-                                 <th scope="col">Action</th>
-                                 <th scope="col">Created On</th>
-                                 <th scope="col">Password</th>
-                                 <th scope="col">Username</th>
-                                 <th scope="col">Role</th>
-                                 <th scope="col">ID</th>
+                                 <th scope="col">Notes</th>
+                                 <th scope="col">Type</th>
+                                 <th scope="col">Amount</th>
+                                 <th scope="col">Patient Name</th>
+                                 <th scope="col">Date</th>
+                                 <th scope="col">#</th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
+                                 <td>1st Due</td>
+                                 <td>Subscription Payment</td>
+                                 <td>100 KD</td>
+                                 <td>patient1</td>
+                                 <td>01 Apr 2023</td>
                                  <td>1</td>
                               </tr>
                               <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
+                                 <td>Extra payment</td>
+                                 <td>Extra Payment</td>
+                                 <td>25 KD</td>
+                                 <td>patient2</td>
+                                 <td>01 Apr 2023</td>
                                  <td>2</td>
                               </tr>
                               <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
+                                 <td>3rd Due</td>
+                                 <td>Subscription Payment</td>
+                                 <td>75 KD</td>
+                                 <td>patient3</td>
+                                 <td>08 Apr 2023</td>
                                  <td>3</td>
                               </tr>
                               <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
+                                 <td>1st Due</td>
+                                 <td>Subscription Payment</td>
+                                 <td>125 KD</td>
+                                 <td>patient4</td>
+                                 <td>11 Apr 2023</td>
                                  <td>4</td>
-                              </tr>
-                              <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
-                                 <td>5</td>
-                              </tr>
-                              <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
-                                 <td>6</td>
-                              </tr>
-                              <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
-                                 <td>7</td>
-                              </tr>
-                              <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
-                                 <td>8</td>
-                              </tr>
-                              <tr>
-                                 <td><a href="#" class="delete">Delete</a><a href="#" class="edit">Edit</a></td>
-                                 <td>24 Apr 2023</td>
-                                 <td>dshfhjgssfos2426</td>
-                                 <td>Username@1524</td>
-                                 <td>Dentist</td>
-                                 <td>9</td>
                               </tr>
                            </tbody>
                         </table>
@@ -143,7 +120,7 @@
          <!--Start Sidebar-->
          <div class="sidebar">
             <div class="tabs">
-               <div class="tab active">
+               <div class="tab">
                   <a href="javascript:void()">
                      <p>Dashboard</p>
                      <div class="icon"><img src="images/icon_1.png" alt="" /></div>
@@ -179,7 +156,7 @@
                      <div class="icon"><img src="images/icon_6.png" alt="" /></div>
                   </a>
                </div>
-               <div class="tab">
+               <div class="tab active">
                   <a href="javascript:void()">
                      <p>Payment Report</p>
                      <div class="icon"><img src="images/icon_7.png" alt="" /></div>

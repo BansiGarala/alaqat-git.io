@@ -177,6 +177,7 @@ textarea {
     border-color: #ccc;
     width: -webkit-fill-available;
 	resize: none;
+	padding: 6px 12px;
 }
 
 a:hover,
@@ -469,6 +470,7 @@ table tr td a.delete{
     color: #fff;
 	margin: 0px 5px;
 	font-size: 16px;
+	text-decoration: none!important;
 }
 table tr td a.delete:hover{
 	background-color: #a43f3f;
@@ -476,13 +478,14 @@ table tr td a.delete:hover{
 table tr td a.edit:hover{
 	background-color: #329f5e;
 }
-table tr td a.edit,table tr td.assign a.btn{
+table tr td a.edit,table tr td.assign a.btn,table tr td.view a.btn{
 	padding: 5px 20px;
     background-color:#61C98A;
     border-radius: 50px;
     color: #fff;
 	margin: 0px 5px;
 	font-size: 16px;
+	text-decoration: none!important;
 }
 table tr td a{
 	color:#6EC598;
@@ -495,15 +498,17 @@ table tr td.assign a{
 	font-size: 16px;
     margin-top: 5px;
 }
-table tr td.assign a.btn{
+table tr td.assign a.btn,table tr td.view a.btn{
 	background-color: #FBC545;
 	width: fit-content;
     text-align: center;
     margin: 0px auto;
 }
-table tr td.assign a.btn:hover{
+table tr td.assign a.btn:hover,table tr td.view a.btn:hover{
 	background-color: #deaa2e;
-	text-decoration: none!important;
+    text-decoration: none!important;
+    border-color: #deaa2e;
+    color: #fff;
 }
 .adduser{
 	max-width: 640px;
@@ -564,7 +569,7 @@ input::placeholder{
 .checkbox_wrap .form-check label:before{
 	content: '';
 	position: absolute;
-	top: 1px;
+	top: 2px;
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
@@ -576,7 +581,7 @@ input::placeholder{
 .checkbox_wrap .form-check label:after {
 	content: '';
 	position: absolute;
-	top: 1px;
+	top: 2px;
 	left: 0px;
 	bottom: 0px;
 	right: 0px;
@@ -753,7 +758,7 @@ button:focus,button:hover,
     min-width: 360px;
 }
 .patient_detail.search form{
-    width: 590px;
+    width: auto;
 }
 .patient_detail.search .row{
 	justify-content: flex-end;
@@ -865,6 +870,69 @@ button.btn-close{
 }
 .tab-content .subscription form .input_div.half input,.tab-content .subscription form select{
 	width: 253px; 
+}
+.modal.view .table{
+    margin-bottom: 25px!important;
+}
+.modal.view .all_link{
+	display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+	margin-bottom: 25px;
+}
+.modal.view .all_link a{
+	color:#6EC598;
+	text-decoration: underline;
+}
+.modal.view .all_link a:hover {
+    color: #0d748a;
+}
+.modal.view form .input_div{
+	align-items: flex-start;
+}
+.modal.view form textarea{
+	min-width:520px
+}
+.modal.view form .button{
+	justify-content: flex-end;
+    margin-right: 131px;
+}
+.modal.view .checkbox_wrap .form-check p{
+	margin-bottom: 0px;
+}
+.modal.view .modal-dialog {
+    min-width: 1000px;
+}
+.mail_icon{
+	display: flex;
+    min-width: 40px;
+    height: 40px;
+    background-color: #F9F9F9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+}
+.mail_icon a{
+	width: 24px;
+	display: block;
+}
+.patient_detail.search.report form {
+    width: auto;
+}
+.patient_detail.report form .d-flex{
+	align-items: center;
+}
+.patient_detail.report .input_div {
+    margin-bottom: 0px;
+}
+.patient_detail.report form .button{
+	margin-right: 20px;
+}
+.mail_icon:hover {
+    box-shadow: 0px 4px 11px 0px rgb(0 0 0 / 25%);
 }
 /*****my css****/
 .login{
