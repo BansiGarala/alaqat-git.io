@@ -1,390 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
-    />
-    <title>Alaqat</title>
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <header>
-      <div class="container">
-         <div class="logo">
-            <a href="#"><img src="images/logo.svg" alt /></a>
-         </div>
-         <div class="header-right">
-            <div class="profile_icon">
-               <div class="profile_info">
-                  Welcome Username<span>Designation</span>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+         />
+      <title>Alaqat</title>
+      <!-- css -->
+      <link href="css/bootstrap.min.css" rel="stylesheet" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+         />
+      <link href="css/responsive.css" rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet" />
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="logo">
+               <a href="#"><img src="images/logo.svg" alt /></a>
+            </div>
+            <div class="header-right">
+               <div class="profile_icon">
+                  <div class="profile_info">
+                     Welcome Username<span>Designation</span>
+                  </div>
+                  <a href="#"><img src="images/profile.png" /> </a> 
+                  <button type="button" class="hamburger-menu"></button>
                </div>
-               <a href="#"><img src="images/profile.png" /> </a> 
-               <button type="button" class="hamburger-menu"></button>
             </div>
          </div>
-      </div>
-   </header>
-    <div class="main">
-    <!-- Start Home Section -->
-    <div class="content_part">
-      <div class="container">
-      <div class="entry_wrapper">
-        
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="main-title">
-                <h1>Patient Details</h1>
-                
-              </div>
+      </header>
+      <div class="main">
+         <!-- Start Home Section -->
+         <div class="content_part">
+            <div class="container">
+               <div class="entry_wrapper">
+                  <div class="row">
+                     <div class="col-md-12 col-sm-12">
+                        <div class="main-title">
+                           <h1>Patient Details</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="patient_detail">
+                  <div class="row">
+                     <form>
+                        <div class="input_div">
+                           <label>Staff Refer code</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label class="w-custom">Date</label>
+                              <input type="date" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>File Number</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <nav class="tabs">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal info</button>
+                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Accompany personal details</button>
+                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Medical History</button>
+                  </div>
+               </nav>
+               <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                     <form>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>Nationality</label>
+                              <input type="text" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>Patient Name</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>DOB</label>
+                              <input type="text" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>Civil ID</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>Career</label>
+                              <input type="text" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>Social Status</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>Address</label>
+                              <input type="text" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>Phone Number</label>
+                              <input type="number" class="form-control">
+                           </div>
+                        </div>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>Gender</label>
+                              <input type="text" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>Kind of Therapy</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="input_div info">
+                           <label>How do you know us ?</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </form>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                     <form>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>Relation</label>
+                              <input type="text" class="form-control">
+                           </div>
+                           <div class="input_div">
+                              <label>Name</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                        <div class="d_flex flex-wrap">
+                           <div class="input_div">
+                              <label>Phone Number</label>
+                              <input type="text" class="form-control">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="tab-pane fade medical" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                     <form>
+                        <div class="input_div que">
+                           <label>Do you have any below disease ?</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="checkbox_wrap">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                              Chest Pain
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                              <label class="form-check-label" for="flexRadioDefault2">
+                              Blood Sugar
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                              <label class="form-check-label" for="flexRadioDefault3">
+                              High Pressure
+                              </label>
+                           </div>
+                        </div>
+                        <div class="checkbox_wrap">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4">
+                              <label class="form-check-label" for="flexRadioDefault4">
+                              No
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5">
+                              <label class="form-check-label" for="flexRadioDefault5">
+                              Yes
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <p>
+                                 Are You Smoker ?
+                              </p>
+                           </div>
+                        </div>
+                        <div class="checkbox_wrap">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6">
+                              <label class="form-check-label" for="flexRadioDefault6">
+                              No
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault7">
+                              <label class="form-check-label" for="flexRadioDefault7">
+                              Yes
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <p>
+                                 Any Allergy ?
+                              </p>
+                           </div>
+                        </div>
+                        <div class="input_div que">
+                           <label>If yes, Kind of Allergy</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="checkbox_wrap">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault8">
+                              <label class="form-check-label" for="flexRadioDefault8">
+                              No
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault9">
+                              <label class="form-check-label" for="flexRadioDefault9">
+                              Yes
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <p>
+                                 Any Operation before ?
+                              </p>
+                           </div>
+                        </div>
+                        <div class="input_div que">
+                           <label>If yes, Kind of Operation</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="checkbox_wrap">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault10">
+                              <label class="form-check-label" for="flexRadioDefault10">
+                              No
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault11">
+                              <label class="form-check-label" for="flexRadioDefault11">
+                              Yes
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <p>
+                                 Visit any physiotherapist ?
+                              </p>
+                           </div>
+                        </div>
+                        <div class="input_div que">
+                           <label>If yes, reason and location</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="button">
+                           <a type="submit" href="#">Register</a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
             </div>
-          </div>
-       </div>
-       
-       <div class="patient_detail">
-          <div class="row">
-            
-              <form>
-                <div class="input_div">
-                  <label>Staff Refer code</label>
-                  <input type="text" class="form-control">
-                </div>
-                <div class="d_flex flex-wrap">
-                  <div class="input_div">
-                    <label class="w-custom">Date</label>
-                    <input type="date" class="form-control">
-                  </div>
-                <div class="input_div">
-                  <label>File Number</label>
-                  <input type="text" class="form-control">
-                </div>
-                
-              </div>
-              </form>
-        
-            
-            
-             
-            
-          </div>
-         
-      </div>
-      <nav class="tabs">
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Personal info</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Accompany personal details</button>
-          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Medical History</button>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-          <form>
-            <div class="d_flex flex-wrap">
-              <div class="input_div">
-                <label>Nationality</label>
-                <input type="text" class="form-control">
-              </div>
-            <div class="input_div">
-              <label>Patient Name</label>
-              <input type="text" class="form-control">
+         </div>
+         <!--Start Sidebar-->
+         <div class="sidebar">
+            <div class="tabs">
+               <div class="tab active">
+                  <a href="javascript:void()">
+                     <p>Dashboard</p>
+                     <div class="icon"><img src="images/icon_1.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>New Patient Registration</p>
+                     <div class="icon"><img src="images/icon_2.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Search Patient</p>
+                     <div class="icon"><img src="images/icon_3.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Payment Reminders</p>
+                     <div class="icon"><img src="images/icon_4.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Audit Logs</p>
+                     <div class="icon"><img src="images/icon_5.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Patient’s Visit Report</p>
+                     <div class="icon"><img src="images/icon_6.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Payment Report</p>
+                     <div class="icon"><img src="images/icon_7.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Subscription Report</p>
+                     <div class="icon"><img src="images/icon_8.png" alt="" /></div>
+                  </a>
+               </div>
+               <div class="tab">
+                  <a href="javascript:void()">
+                     <p>Doctor Recall Report</p>
+                     <div class="icon"><img src="images/icon_9.png" alt="" /></div>
+                  </a>
+               </div>
             </div>
-            
-          </div>
-            <div class="d_flex flex-wrap">
-              <div class="input_div">
-                <label>DOB</label>
-                <input type="text" class="form-control">
-              </div>
-            <div class="input_div">
-              <label>Civil ID</label>
-              <input type="text" class="form-control">
-            </div>
-            
-              </div>
-              <div class="d_flex flex-wrap">
-                <div class="input_div">
-                  <label>Career</label>
-                  <input type="text" class="form-control">
-                </div>
-              <div class="input_div">
-                <label>Social Status</label>
-                <input type="text" class="form-control">
-              </div>
-              
-                </div>
-                <div class="d_flex flex-wrap">
-                  <div class="input_div">
-                    <label>Address</label>
-                    <input type="text" class="form-control">
-                  </div>
-                <div class="input_div">
-                  <label>Phone Number</label>
-                  <input type="number" class="form-control">
-                </div>
-                
-                  </div>
-                  <div class="d_flex flex-wrap">
-                    <div class="input_div">
-                      <label>Gender</label>
-                      <input type="text" class="form-control">
-                    </div>
-                  <div class="input_div">
-                    <label>Kind of Therapy</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  
-                    </div>
-                    <div class="input_div info">
-                      <label>How do you know us ?</label>
-                      <input type="text" class="form-control">
-                    </div>
-          </form>
-        </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <form>
-            <div class="d_flex flex-wrap">
-              <div class="input_div">
-                <label>Relation</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="input_div">
-                <label>Name</label>
-                <input type="text" class="form-control">
-              </div>
-           
-            
-          </div>
-            <div class="d_flex flex-wrap">
-              <div class="input_div">
-                <label>Phone Number</label>
-                <input type="text" class="form-control">
-              </div>
-            
-            
-              </div>
-              
-                
-                 
-                   
-          </form>
-        </div>
-        <div class="tab-pane fade medical" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <form>
-            
-              <div class="input_div que">
-                <label>Do you have any below disease ?</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="checkbox_wrap">
-
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Chest Pain
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Blood Sugar
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                  <label class="form-check-label" for="flexRadioDefault3">
-                    High Pressure
-                  </label>
-                </div>
-                
-              </div>
-              <div class="checkbox_wrap">
-
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4">
-                  <label class="form-check-label" for="flexRadioDefault4">
-                    No
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5">
-                  <label class="form-check-label" for="flexRadioDefault5">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <p>
-                    Are You Smoker ?
-                  </p>
-                </div>
-                
-              </div>
-              <div class="checkbox_wrap">
-
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault6">
-                  <label class="form-check-label" for="flexRadioDefault6">
-                    No
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault7">
-                  <label class="form-check-label" for="flexRadioDefault7">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <p>
-                    Any Allergy ?
-                  </p>
-                </div>
-                
-              </div>
-              <div class="input_div que">
-                <label>If yes, Kind of Allergy</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="checkbox_wrap">
-
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault8">
-                  <label class="form-check-label" for="flexRadioDefault8">
-                    No
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault9">
-                  <label class="form-check-label" for="flexRadioDefault9">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <p>
-                    Any Operation before ?
-                  </p>
-                </div>
-                
-              </div>
-              <div class="input_div que">
-                <label>If yes, Kind of Operation</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="checkbox_wrap">
-
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault10">
-                  <label class="form-check-label" for="flexRadioDefault10">
-                    No
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault11">
-                  <label class="form-check-label" for="flexRadioDefault11">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <p>
-                    Visit any physiotherapist ?
-                  </p>
-                </div>
-                
-              </div>
-              <div class="input_div que">
-                <label>If yes, reason and location</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="button">
-                <a type="submit" href="#">Register</a>
-                </div>
-           </form>
-        </div>
+         </div>
+         <!--End Sidebar-->
+         </section>
       </div>
-    </div>
-    </div>
-
-      <!--Start Sidebar-->
-      <div class="sidebar">
-        <div class="tabs">
-          <div class="tab active">
-            <a href="javascript:void()">
-              <p>Dashboard</p>
-              <div class="icon"><img src="images/icon_1.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>New Patient Registration</p>
-              <div class="icon"><img src="images/icon_2.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Search Patient</p>
-              <div class="icon"><img src="images/icon_3.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Payment Reminders</p>
-              <div class="icon"><img src="images/icon_4.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Audit Logs</p>
-              <div class="icon"><img src="images/icon_5.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Patient’s Visit Report</p>
-              <div class="icon"><img src="images/icon_6.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Payment Report</p>
-              <div class="icon"><img src="images/icon_7.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Subscription Report</p>
-              <div class="icon"><img src="images/icon_8.png" alt="" /></div>
-            </a>
-          </div>
-          <div class="tab">
-            <a href="javascript:void()">
-              <p>Doctor Recall Report</p>
-              <div class="icon"><img src="images/icon_9.png" alt="" /></div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!--End Sidebar-->
-    </section>
-    </div>
-    <!-- End Home Section -->
-
-    <!-- JavaScript -->
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $(".hamburger-menu").click(function(){
-          $(".sidebar").toggleClass("active", 5000);
-          $(".hamburger-menu").toggleClass("close", 5000);
-        });
-      });  
-   </script>
-  </body>
+      <!-- End Home Section -->
+      <!-- JavaScript -->
+      <script src="js/jquery-3.6.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+           $(".hamburger-menu").click(function(){
+             $(".sidebar").toggleClass("active", 5000);
+             $(".hamburger-menu").toggleClass("close", 5000);
+           });
+         });  
+      </script>
+   </body>
 </html>
