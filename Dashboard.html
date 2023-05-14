@@ -28,8 +28,7 @@
             <div class="profile_info">
               Welcome Username<span>Designation</span>
             </div>
-            <a href="#"><img src="images/profile.png" /> </a>
-            
+            <a href="#"><img src="images/profile.png" /> </a> 
             <button type="button" class="hamburger-menu"></button>
           </div>
           
@@ -192,7 +191,8 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $(".hamburger-menu").click(function(){
-          $(".sidebar").toggleClass("active");
+          $(".sidebar").toggleClass("active", 5000);
+          $(".hamburger-menu").toggleClass("close", 5000);
         });
       });
       
