@@ -549,7 +549,7 @@ input::placeholder{
     justify-content: flex-end;
     align-items: center;
 	margin-bottom: 21px;
-	margin-left: 25px;
+	margin-left: 40px;
 }
 .patient_detail form .d_flex{
 	display: flex;
@@ -558,16 +558,17 @@ input::placeholder{
 .patient_detail .input_div input{
 	font-size: 18px;
     color: #333;
-	max-width: 213px;
+	width: 213px;
 	order: 1;
 	margin-right: 15px;
 	background-color: #F9F9F9;
     border: 1px solid #ccc;
     border-radius: 50px;
+	padding: 6px 20px;
 }
 .patient_detail .input_div label{
 	order: 2;
-	min-width: 130px;
+	width: 130px;
     text-align: right;
 }
 .patient_detail{
@@ -583,4 +584,89 @@ nav.tabs{
     background-color: #F9F9F9;
     width: fit-content;
     margin-left: auto;
+	border-radius: 50px;
+    padding: 8px;
+}
+.tabs .nav-tabs .nav-link.active{
+	border-radius: 50px;
+    background-color: #0d748a;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.tabs .nav-tabs .nav-link{
+	color:#333;
+	padding: 10px 30px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border: none;
+}
+button:focus,button:hover,
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    outline: 0;
+    border: none;
+}
+.content_part .tab-content{
+	border: 1px solid #CCCCCC;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    padding: 43px 47px;
+    margin-top: 28px;
+	width: max-content;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.tab-content form .d_flex{
+	display: flex;
+    justify-content: flex-end;
+}
+.tab-content form .input_div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+.tab-content form .input_div label {
+    order: 2;
+    min-width: 145px;
+    text-align: right;
+	font-size: 18px;
+}
+.tab-content form .input_div input {
+    font-size: 18px;
+    color: #333;
+    width: 226px;
+    order: 1;
+    margin-right: 15px;
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+.tab-content form .input_div.info{
+	margin-bottom: 0px;
+    margin-left: 0px;
+}
+.tab-content form .input_div.info input{
+	width: calc(100% - 191px);
+}
+.tab-content form .input_div.info label {
+    width: 206px;
+}
+.tab-content form .d_flex .input_div:first-child{
+	margin-left: 0px;
+}
+.tab-content form .input_div.que label {
+    width: auto;
+}
+.tab-content form .input_div.que label {
+    width: auto;
+}
+.tab-content .button{
+    margin-top: 30px;
+	justify-content: flex-end;
 }
