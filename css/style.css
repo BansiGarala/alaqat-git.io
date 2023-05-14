@@ -294,39 +294,11 @@ img{
 .sidebar .tab.active p,.sidebar .tab:hover p{
 	color: #fff;
 }
-.sidebar .tab:hover a .icon{
-    background-image: url('../images/icon_1.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 22px;
+.sidebar .tab a .icon{
 	height: 22px;
 }
-.sidebar .tab:nth-child(2) a .icon{
-    background-image: url('../images/icon_2_hover.svg');
-}
-.sidebar .tab:nth-child(3) a .icon{
-    background-image: url('../images/icon_3_hover.svg');
-}
-.sidebar .tab:nth-child(4) a .icon{
-    background-image: url('../images/icon_4_hover.svg');
-}
-.sidebar .tab:nth-child(5) a .icon{
-    background-image: url('../images/icon_5_hover.svg');
-}
-.sidebar .tab:nth-child(6) a .icon{
-    background-image: url('../images/icon_6_hover.svg');
-}
-.sidebar .tab:nth-child(7) a .icon{
-    background-image: url('../images/icon_7_hover.svg');
-}
-.sidebar .tab:nth-child(8) a .icon{
-    background-image: url('../images/icon_8_hover.svg');
-}
-.sidebar .tab:nth-child(9) a .icon{
-    background-image: url('../images/icon_9_hover.svg');
-}
-.sidebar .tab:hover a .icon img{
-	display: none;
+.sidebar .tab:hover a .icon, .sidebar .tab.active a .icon{
+	filter: brightness(7);
 }
 .main-title{
 	margin-top: 100px;
