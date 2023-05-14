@@ -1,350 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <meta
-         name="viewport"
-         content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
-         />
-      <title>Alaqat</title>
-      <!-- css -->
-      <link href="css/bootstrap.min.css" rel="stylesheet" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-         />
-      <link href="css/responsive.css" rel="stylesheet" />
-      <link href="css/style.css" rel="stylesheet" />
-   </head>
-   <body>
-      <header>
-         <div class="container">
-            <div class="logo">
-               <a href="#"><img src="images/logo.svg" alt /></a>
-            </div>
-            <div class="header-right">
-               <div class="profile_icon">
-                  <a href="#"><img src="images/profile.png" /> </a>
-                  <div class="profile_info">
-                     Welcome Username<span>Designation</span>
-                  </div>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>Alaqat</title>
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+         <div class="logo">
+            <a href="#"><img src="images/logo.svg" alt /></a>
+         </div>
+         <div class="header-right">
+            <div class="profile_icon">
+               <div class="profile_info">
+                  Welcome Username<span>Designation</span>
                </div>
+               <a href="#"><img src="images/profile.png" /> </a> 
+               <button type="button" class="hamburger-menu"></button>
             </div>
          </div>
-      </header>
-      <div class="main">
-         <!-- Start Home Section -->
-         <div class="content_part">
-            <div class="container">
-               <div class="entry_wrapper">
-                  <div class="row">
-                     <div class="col-md-12 col-sm-12">
-                        <div class="main-title">
-                           <h1>Patient  Info</h1>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="patient_detail">
-                  <div class="row">
-                     <form>
-                        <div class="d_flex">
-                           <div class="input_div">
-                              <label>Date</label>
-                              <input type="text" class="form-control" placeholder="15-mar-2023">
-                           </div>
-                           <div class="input_div">
-                              <label>File Number</label>
-                              <input type="text" class="form-control" placeholder="12345678">
-                           </div>
-                        </div>
-                        <div class="d_flex">
-                           <div class="input_div">
-                              <label>Civil ID</label>
-                              <input type="number" class="form-control" placeholder="290858685596">
-                           </div>
-                           <div class="input_div">
-                              <label>Patient Name</label>
-                              <input type="text" class="form-control" placeholder="Imran khan">
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-               <nav class="tabs">
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-comment" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Doctor Comments</button>
-                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-subscribe" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Patient Subscription</button>
-                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-payment" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Extra Payments</button>
-                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-file" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">File Uploads</button>
-                  </div>
-               </nav>
-               <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active d_c" id="nav-comment" role="tabpanel" aria-labelledby="nav-home-tab">
-                     <form>
-                        <div class="input_div">
-                           <label>Doctor Name</label>
-                           <input type="text" class="form-control">
-                        </div>
-                        <div class="input_div">
-                           <label>Comments</label>
-                           <textarea></textarea>
-                        </div>
-                        <div class="button">
-                           <a type="submit" href="#">Save</a>
-                        </div>
-                     </form>
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <th scope="col">Date</th>
-                                 <th scope="col">Doctor Name</th>
-                                 <th scope="col">Comments</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>15-mar-2023</td>
-                                 <td>Dr. Salim</td>
-                                 <td>Patient needs Teenager therapy</td>
-                              </tr>
-                              <tr>
-                                 <td>15-mar-2023</td>
-                                 <td>Dr. Salim</td>
-                                 <td>Patient needs Teenager therapy</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade subscription" id="nav-subscribe" role="tabpanel" aria-labelledby="nav-profile-tab">
-                     <form>
-                        <div class="input_div f_width">
-                           <label>Subscription</label>
-                           <input type="text" class="form-control" placeholder="6th months subscription plan">
-                        </div>
-                        <div class="d_flex">
-                           <div class="input_div">
-                              <label>Amount per visits</label>
-                              <input type="text" class="form-control" placeholder="50 KD">
-                           </div>
-                           <div class="input_div">
-                              <label>Number of visits</label>
-                              <input type="number" class="form-control" placeholder="6">
-                           </div>
-                        </div>
-                        <div class="d_flex">
-                           <div class="input_div">
-                              <label>Total Amount</label>
-                              <input type="text" class="form-control" placeholder="300 KD">
-                           </div>
-                           <div class="input_div">
-                              <label>Free visits</label>
-                              <input type="number" class="form-control" placeholder="1">
-                           </div>
-                        </div>
-                        <div class="input_div half">
-                           <label>Payment Amount</label>
-                           <input type="number" class="form-control" placeholder="">
-                        </div>
-                        <div class="input_div half">
-                           <label>Balance Amount</label>
-                           <input type="number" class="form-control" placeholder="">
-                        </div>
-                        <div class="input_div half">
-                           <label>Due Date</label>
-                           <select class="form-select" aria-label="Default select example">
-                              <option selected></option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                           </select>
-                        </div>
-                        <div class="button">
-                           <a type="submit" href="#">Save</a>
-                        </div>
-                     </form>
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <th scope="col">Due Date</th>
-                                 <th scope="col">Balance Amount</th>
-                                 <th scope="col">Amount Paid</th>
-                                 <th scope="col">Payment Date</th>
-                                 <th scope="col">Plan</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>27 Mar 2023</td>
-                                 <td>200 KD</td>
-                                 <td>100 KD</td>
-                                 <td>15 mar 2023</td>
-                                 <td>6  Months</td>
-                              </tr>
-                              <tr>
-                                 <td>27 Mar 2023</td>
-                                 <td>200 KD</td>
-                                 <td>100 KD</td>
-                                 <td>15 mar 2023</td>
-                                 <td>6  Months</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade subscription" id="nav-payment" role="tabpanel" aria-labelledby="nav-contact-tab">
-                     <form>
-                        <div class="input_div f_width">
-                           <label>Extra Payment</label>
-                           <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="input_div f_width">
-                           <label>Comments</label>
-                           <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="button">
-                           <a type="submit" href="#">Save</a>
-                        </div>
-                     </form>
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <th scope="col">Comments</th>
-                                 <th scope="col">Amount Paid</th>
-                                 <th scope="col">Payment Date</th>
-                                 <th scope="col">#</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>extra payment 1</td>
-                                 <td>100 KD</td>
-                                 <td>15 mar 2023</td>
-                                 <td>1</td>
-                              </tr>
-                              <tr>
-                                 <td>extra payment 2</td>
-                                 <td>50 KD</td>
-                                 <td>18 mar 2023</td>
-                                 <td>2</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-                  <div class="tab-pane fade subscription" id="nav-file" role="tabpanel" aria-labelledby="nav-contact-tab">
-                     <form>
-                        <div class="input_div f_width">
-                           <label>File Name</label>
-                           <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="input_div f_width">
-                           <label>Select File</label>
-                           <input type="text" class="form-control" placeholder="">
-                        </div>
-                        <div class="button">
-                           <a type="submit" href="#">Save</a>
-                        </div>
-                     </form>
-                     <div class="table-responsive">
-                        <table class="table">
-                           <thead>
-                              <tr>
-                                 <th scope="col">Link</th>
-                                 <th scope="col">File Name</th>
-                                 <th scope="col">Uploaded on</th>
-                                 <th scope="col">#</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td><a href="#">link</a></td>
-                                 <td>file.png</td>
-                                 <td>15 mar 2023</td>
-                                 <td>1</td>
-                              </tr>
-                              <tr>
-                                 <td><a href="#">link</a></td>
-                                 <td>report.png</td>
-                                 <td>18 mar 2023</td>
-                                 <td>2</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!--Start Sidebar-->
-         <div class="sidebar">
-            <div class="tabs">
-               <div class="tab active">
-                  <a href="javascript:void()">
-                     <p>Dashboard</p>
-                     <div class="icon"><img src="images/icon_1.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>New Patient Registration</p>
-                     <div class="icon"><img src="images/icon_2.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Search Patient</p>
-                     <div class="icon"><img src="images/icon_3.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Payment Reminders</p>
-                     <div class="icon"><img src="images/icon_4.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Audit Logs</p>
-                     <div class="icon"><img src="images/icon_5.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Patient’s Visit Report</p>
-                     <div class="icon"><img src="images/icon_6.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Payment Report</p>
-                     <div class="icon"><img src="images/icon_7.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Subscription Report</p>
-                     <div class="icon"><img src="images/icon_8.png" alt="" /></div>
-                  </a>
-               </div>
-               <div class="tab">
-                  <a href="javascript:void()">
-                     <p>Doctor Recall Report</p>
-                     <div class="icon"><img src="images/icon_9.png" alt="" /></div>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <!--End Sidebar-->
-         </section>
       </div>
-      <!-- End Home Section -->
-      <!-- JavaScript -->
-      <script src="js/jquery-3.6.3.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-   </body>
+   </header>
+    <div class="main">
+    <!-- Start Home Section -->
+    <div class="content_part">
+      <div class="container">
+      <div class="entry_wrapper">
+        
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="main-title">
+                <h1>Patient  Info</h1>
+                
+              </div>
+            </div>
+          </div>
+       </div>
+       
+       <div class="patient_detail">
+          <div class="row">
+            
+              <form>
+                <div class="d_flex">
+                    <div class="input_div">
+                      <label>Date</label>
+                      <input type="text" class="form-control" placeholder="15-mar-2023">
+                    </div>
+                  <div class="input_div">
+                    <label>File Number</label>
+                    <input type="text" class="form-control" placeholder="12345678">
+                  </div>
+                  
+                </div>
+                <div class="d_flex">
+                  <div class="input_div">
+                    <label>Civil ID</label>
+                    <input type="number" class="form-control" placeholder="290858685596">
+                  </div>
+                <div class="input_div">
+                  <label>Patient Name</label>
+                  <input type="text" class="form-control" placeholder="Imran khan">
+                </div>
+                
+              </div>
+              </form>
+        
+            
+            
+             
+            
+          </div>
+         
+      </div>
+      <nav class="tabs">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-comment" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Doctor Comments</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-subscribe" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Patient Subscription</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-payment" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Extra Payments</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-file" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">File Uploads</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active d_c" id="nav-comment" role="tabpanel" aria-labelledby="nav-home-tab">
+          <form>
+            
+              <div class="input_div">
+                <label>Doctor Name</label>
+                <input type="text" class="form-control">
+              </div>
+            <div class="input_div">
+              <label>Comments</label>
+              <textarea></textarea>
+            </div>
+            <div class="button">
+                <a type="submit" href="#">Save</a>
+                </div>
+         
+            
+          </form>
+          <div class="table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Doctor Name</th>
+                    <th scope="col">Comments</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>15-mar-2023</td>
+                    <td>Dr. Salim</td>
+                    <td>Patient needs Teenager therapy</td>
+                  </tr>
+                  <tr>
+                    <td>15-mar-2023</td>
+                    <td>Dr. Salim</td>
+                    <td>Patient needs Teenager therapy</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="tab-pane fade subscription" id="nav-subscribe" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <form>
+            
+                <div class="input_div f_width">
+                  <label>Subscription</label>
+                  <input type="text" class="form-control" placeholder="6th months subscription plan">
+                </div>
+                <div class="d_flex">
+              <div class="input_div">
+                <label>Amount per visits</label>
+                <input type="text" class="form-control" placeholder="50 KD">
+              </div>
+              <div class="input_div">
+                <label>Number of visits</label>
+                <input type="number" class="form-control" placeholder="6">
+              </div>
+              </div>
+              <div class="d_flex">
+                <div class="input_div">
+                  <label>Total Amount</label>
+                  <input type="text" class="form-control" placeholder="300 KD">
+                </div>
+                <div class="input_div">
+                  <label>Free visits</label>
+                  <input type="number" class="form-control" placeholder="1">
+                </div>
+                </div>
+                <div class="input_div half">
+                    <label>Payment Amount</label>
+                    <input type="number" class="form-control" placeholder="">
+                  </div>
+                  <div class="input_div half">
+                    <label>Balance Amount</label>
+                    <input type="number" class="form-control" placeholder="">
+                  </div>
+                  <div class="input_div half">
+                    <label>Due Date</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                  </div>
+              <div class="button">
+                  <a type="submit" href="#">Save</a>
+                  </div>
+           
+              
+            </form>
+            <div class="table-responsive">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Due Date</th>
+                      <th scope="col">Balance Amount</th>
+                      <th scope="col">Amount Paid</th>
+                      <th scope="col">Payment Date</th>
+                      <th scope="col">Plan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>27 Mar 2023</td>
+                      <td>200 KD</td>
+                      <td>100 KD</td>
+                      <td>15 mar 2023</td>
+                      <td>6  Months</td>
+                    </tr>
+                    <tr>
+                        <td>27 Mar 2023</td>
+                        <td>200 KD</td>
+                        <td>100 KD</td>
+                        <td>15 mar 2023</td>
+                        <td>6  Months</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        <div class="tab-pane fade subscription" id="nav-payment" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <form>
+            
+                <div class="input_div f_width">
+                  <label>Extra Payment</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="input_div f_width">
+                    <label>Comments</label>
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+              <div class="button">
+                  <a type="submit" href="#">Save</a>
+                  </div>
+           
+              
+            </form>
+            <div class="table-responsive">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Comments</th>
+                      <th scope="col">Amount Paid</th>
+                      <th scope="col">Payment Date</th>
+                      <th scope="col">#</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>extra payment 1</td>
+                      <td>100 KD</td>
+                      <td>15 mar 2023</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>extra payment 2</td>
+                        <td>50 KD</td>
+                        <td>18 mar 2023</td>
+                        <td>2</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+        </div>
+        <div class="tab-pane fade subscription" id="nav-file" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <form>
+            
+                <div class="input_div f_width">
+                  <label>File Name</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="input_div f_width">
+                    <label>Select File</label>
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+              <div class="button">
+                  <a type="submit" href="#">Save</a>
+                  </div>
+           
+              
+            </form>
+            <div class="table-responsive">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Link</th>
+                      <th scope="col">File Name</th>
+                      <th scope="col">Uploaded on</th>
+                      <th scope="col">#</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="#">link</a></td>
+                      <td>file.png</td>
+                      <td>15 mar 2023</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">link</a></td>
+                        <td>report.png</td>
+                        <td>18 mar 2023</td>
+                        <td>2</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <!--Start Sidebar-->
+      <div class="sidebar">
+        <div class="tabs">
+          <div class="tab active">
+            <a href="javascript:void()">
+              <p>Dashboard</p>
+              <div class="icon"><img src="images/icon_1.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>New Patient Registration</p>
+              <div class="icon"><img src="images/icon_2.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Search Patient</p>
+              <div class="icon"><img src="images/icon_3.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Payment Reminders</p>
+              <div class="icon"><img src="images/icon_4.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Audit Logs</p>
+              <div class="icon"><img src="images/icon_5.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Patient’s Visit Report</p>
+              <div class="icon"><img src="images/icon_6.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Payment Report</p>
+              <div class="icon"><img src="images/icon_7.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Subscription Report</p>
+              <div class="icon"><img src="images/icon_8.png" alt="" /></div>
+            </a>
+          </div>
+          <div class="tab">
+            <a href="javascript:void()">
+              <p>Doctor Recall Report</p>
+              <div class="icon"><img src="images/icon_9.png" alt="" /></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--End Sidebar-->
+    </section>
+    </div>
+    <!-- End Home Section -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".hamburger-menu").click(function(){
+          $(".sidebar").toggleClass("active", 5000);
+          $(".hamburger-menu").toggleClass("close", 5000);
+        });
+      });  
+   </script>
+  </body>
 </html>
