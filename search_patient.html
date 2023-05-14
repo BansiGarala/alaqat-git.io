@@ -20,19 +20,20 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt /></a>
-        </div>
-        <div class="header-right">
-          <div class="profile_icon">
-            <a href="#"><img src="images/profile.png" /> </a>
-            <div class="profile_info">
-              Welcome Username<span>Designation</span>
+         <div class="logo">
+            <a href="#"><img src="images/logo.svg" alt /></a>
+         </div>
+         <div class="header-right">
+            <div class="profile_icon">
+               <div class="profile_info">
+                  Welcome Username<span>Designation</span>
+               </div>
+               <a href="#"><img src="images/profile.png" /> </a> 
+               <button type="button" class="hamburger-menu"></button>
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </header>
+   </header>
     <div class="main">
     <!-- Start Home Section -->
     <div class="content_part">
@@ -302,7 +303,15 @@
     <!--End Modal-->
 
     <!-- JavaScript -->
-    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".hamburger-menu").click(function(){
+          $(".sidebar").toggleClass("active", 5000);
+          $(".hamburger-menu").toggleClass("close", 5000);
+        });
+      });  
+   </script>
   </body>
 </html>
