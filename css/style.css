@@ -213,6 +213,11 @@ header
 {
 	background-color:#0D748A;
 	height: 90px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 9;
 }
 header .logo{
 	width: 150px;
@@ -273,6 +278,9 @@ img{
     margin-left: auto;
     height: 100vh;
     border-left: 1px solid #eeeeee;
+	position: fixed;
+	right: 0;
+	top: 90px;
 }
 .sidebar .tab{
 	background-color: #FFFFFF;
@@ -301,12 +309,11 @@ img{
 	filter: brightness(7);
 }
 .main-title{
-	margin-top: 100px;
 	border-bottom: 1px solid #CCCCCC;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-bottom: 15px;
+	padding: 10px 0px;
 }
 .main-title h1{
 	font-size: 40px;
@@ -314,18 +321,20 @@ img{
 	color: #333333;
 	margin-bottom: 0px;
 }
+.main-title p{
+	margin-bottom: 0px;
+}
 .content_part{
 	display: flex;
 	width: calc(100% - 374px);
     padding-right: 50px;
 	flex-wrap: wrap;
+	padding-bottom: 100px;
 }
 .content_part .entry_wrapper{
 	width: 100%;
 	margin-bottom: 30px;
-}
-.dashboard_sec{
-	width: 100%;
+	padding: 200px 0px 0px;
 }
 .content_part .container{
     padding-right: 0px;
@@ -430,7 +439,7 @@ table tr th,table tr td{
     text-align: center;
 	border: 1px solid #CCCCCC;
 	color: #333333;
-	font-size: 20px;
+	font-size: 18px;
 }
 table tr td a.delete{
 	padding: 5px 20px;
@@ -487,6 +496,10 @@ input::placeholder{
     align-items: center;
     justify-content: space-between;
 	margin-bottom: 30px;
+}
+.checkbox_wrap h6{
+	font-size: 18px;
+	font-family: 'Poppins-Bold';
 }
 .checkbox_wrap .form-check-input[type=radio]{
 	padding: 0px;
@@ -670,3 +683,50 @@ button:focus,button:hover,
     margin-top: 30px;
 	justify-content: flex-end;
 }
+/*****my css****/
+.login{
+	background-color:#73C8D9;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.login .logo{
+	width: 150px;
+	margin: 0 auto;
+}
+.login-box{
+	width: 600px;
+	background-color: #fff;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 20%);
+	padding:30px 30px 50px;
+	margin: 0px 15px;
+	text-align: center;
+}
+.login-box h4{
+	font-size: 27px;
+	font-family: 'Poppins-Bold';
+	line-height: 40px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+.login-box input{
+	background-color: #EAF9FC;
+	border:1px solid #8DD0DD;
+	border-radius: 30px;
+	padding: 12px 15px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+.login-box input::placeholder{
+	color:#CCCCCC;
+}
+
+/***responsive css****/
+@media only screen and (max-width: 480px) {
+	.login-box {
+		padding:30px 15px 50px;
+	}
+}
+  
