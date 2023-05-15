@@ -200,7 +200,7 @@ ol li,label {
 p a {
 	font-family: 'Poppins-Regular';
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 0.5px;
 	line-height: 30px;
 }
@@ -229,6 +229,7 @@ header .logo{
 	width: 150px;
     height: 150px;
     background-color: #FFFFFF;
+	box-shadow: 0px 0px 4px 2px rgb(204 204 204 / 30%);
     border-radius: 50%;
 	position: relative;
     top: 50px;
@@ -238,8 +239,8 @@ header .logo a{
     height: 100%;
     align-items: center;
     justify-content: center;
-    width: 119px;
     margin: 0px auto;
+	padding: 10px;
 }
 header .logo a img{
 	width: 100%;
@@ -421,7 +422,7 @@ img{
 }
 .button a{
 	background-color: #FBC545;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	border-radius: 50px;
 	padding: 12px 40px;
@@ -462,7 +463,8 @@ table tr th,table tr td{
     text-align: center;
 	border: 1px solid #CCCCCC;
 	color: #333333;
-	font-size: 18px;
+	font-size: 16px;
+	vertical-align: middle;
 }
 table tr td a.delete{
 	padding: 5px 20px;
@@ -543,7 +545,7 @@ input::placeholder{
 	display: flex;
     align-items: center;
     justify-content: space-between;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 .checkbox_wrap h6{
 	font-size: 18px;
@@ -621,7 +623,7 @@ input::placeholder{
 .patient_detail .input_div input,
 .modal.recall form .input_div input,
 .modal.recall form .input_div select{
-	font-size: 18px;
+	font-size: 16px;
     color: #333;
 	width: 213px;
 	order: 1;
@@ -632,7 +634,7 @@ input::placeholder{
 	padding: 6px 20px;
 }
 form select{
-	font-size: 18px!important;
+	font-size: 16px!important;
     color: #333!important;
     width: 213px;
     order: 1;
@@ -672,7 +674,6 @@ nav.tabs{
     background-color: #0d748a;
     padding: 10px 30px;
     color: #fff;
-    /* font-size: 18px; */
     font-weight: 500;
 }
 .tabs .nav-tabs .nav-link{
@@ -704,6 +705,9 @@ button:focus,button:hover,
 	display: flex;
     justify-content: flex-end;
 }
+.tab-content form .d_flex .input_div{
+	width: calc(50% - 20px);
+}
 .tab-content form .input_div {
     display: flex;
     justify-content: flex-end;
@@ -718,14 +722,15 @@ button:focus,button:hover,
 	font-size: 16px;
 }
 .tab-content form .input_div input {
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
-    width: 226px;
     order: 1;
-    margin-right: 15px;
     background-color: #FFF;
     border: 1px solid #ccc;
     border-radius: 50px;
+}
+.tab-content form .input_div select{
+	margin-right:0px;
 }
 .tab-content form .input_div.info{
 	margin-bottom: 0px;
@@ -762,6 +767,7 @@ button:focus,button:hover,
 .tab-content form .input_div.que input {
     width: -webkit-fill-available;
     min-width: 360px;
+	margin-right: 15px;
 }
 .patient_detail.search form{
     width: auto;
@@ -850,7 +856,10 @@ button.btn-close{
 .modal.recall form .input_div.last_visit input{
     border: none;
 }
-.tab-content .tab-pane.d_c form .button,
+.tab-content .tab-pane.d_c form .button{
+	margin-bottom: 35px;
+	margin-right: 145px;
+}
 .tab-content .subscription form .button{
     margin-bottom: 35px;
 	margin-right: 160px;
@@ -858,15 +867,15 @@ button.btn-close{
 .tab-content .tab-pane.d_c .input_div{
     margin-left: 0px;
 }
-.tab-content .tab-pane.d_c textarea{
+/* .tab-content .tab-pane.d_c textarea{
 	margin-right:15px;
-}
+} */
 .tab-content .tab-pane.d_c .table,
 .tab-content .subscription .table{
 	margin-bottom: 0px!important;
 }
 .tab-content .tab-pane.subscription .input_div input{
-    width: -webkit-fill-available;
+    width: 100%;
 }
 .tab-content .tab-pane.subscription .input_div.f_width{
     margin-left: 0px;
@@ -1013,7 +1022,10 @@ button.btn-close{
 		width: 100%;
 		margin-left: 0px;
 	}
-	.tab-content form .input_div input{
+	.tab-content form .input_div input,
+	.tab-content .subscription form .input_div.half input,
+	.tab-content .subscription form select,
+	.tab-content form .d_flex .input_div{
 		width: 100%;
 	}
 }
@@ -1030,6 +1042,9 @@ button.btn-close{
 	.tab-content form .input_div.que input {
 		width: 100%;
 		min-width: initial;
+	}
+	.tabs .nav-tabs{
+		border-radius: 30px;
 	}
 }
 @media only screen and (max-width: 1119px){
@@ -1099,9 +1114,6 @@ button.btn-close{
 	.tabs .nav-tabs .nav-link{
 		padding: 10px;
 	}
-	.tabs .nav-tabs{
-		border-radius: 30px;
-	}
 	.tab-content form .input_div.que label{
 		white-space: pre-wrap;
 	}
@@ -1126,6 +1138,7 @@ button.btn-close{
 	}
 	header .logo a{
 		width: auto;
+		padding: 0px;
 	}
 	header .logo img{
 		padding: 5px;
@@ -1177,6 +1190,14 @@ button.btn-close{
 		width: 100%;
 	}
 	.patient_detail .input_div label.w-custom{
+		width: 100%;
+	}
+	.tab-content .tab-pane.d_c form .button, 
+	.tab-content .subscription form .button, 
+	.tab-content .tab-pane.d_c textarea{
+		margin-right: 0px;
+	}
+	.tab-content .tab-pane.subscription .input_div input{
 		width: 100%;
 	}
 }
