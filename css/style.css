@@ -637,7 +637,7 @@ input::placeholder {
 }
 
 .checkbox_wrap .form-check label {
-	font-size: 16px;
+	font-size: 14px;
 	color: #333;
 	padding-top: 5px;
 }
@@ -1028,6 +1028,7 @@ button.btn-close {
 .modal.view .all_link a {
 	color: #6EC598;
 	text-decoration: underline;
+	font-size: 14px;
 }
 
 .modal.view .all_link a:hover {
@@ -1045,6 +1046,7 @@ button.btn-close {
 
 .modal.view .checkbox_wrap .form-check p {
 	margin-bottom: 0px;
+	font-weight: 600;
 }
 
 .modal.view .modal-dialog {
@@ -1083,7 +1085,7 @@ button.btn-close {
 }
 
 .patient_detail.report .input_div label {
-	width: auto;
+	width: 90px;
 }
 
 .patient_detail.report form .button {
@@ -1450,7 +1452,7 @@ button.btn-close {
 	.patient_detail .input_div input,
 	.modal.recall form .input_div input,
 	.modal.recall form .input_div select {
-		width: 100%;
+		width: 213px;
 		margin-right: 0px;
 	}
 
@@ -1461,8 +1463,8 @@ button.btn-close {
 	}
 
 	.patient_detail .input_div label,
-	.modal.recall form .input_div label {
-		width: auto;
+	.modal.recall form .input_div label,.patient_detail .input_div label.w-custom {
+		width:190px;
 	}
 
 	.patient_detail.search form .d-flex {
@@ -1494,8 +1496,12 @@ button.btn-close {
 	}
 
 	.patient_detail.report .input_div label {
-		width: 100%;
+		width: 100px;
 		text-align: right;
+	}
+	.modal.recall form .input_div label,.modal.recall form .input_div input,
+	.modal.recall form .input_div select{
+		width: 100%;
 	}
 }
 
@@ -1555,10 +1561,12 @@ button.btn-close {
 	.main-title h1 {
 		font-size: 30px;
 		line-height: 38px;
+		text-align: right;
 	}
 
 	.main-title p {
 		font-size: 15px;
+		text-align: right;
 	}
 
 	.checkbox_wrap {
@@ -1605,6 +1613,7 @@ button.btn-close {
 
 	.main-title .button {
 		justify-content: flex-end;
+		margin-top: 5px;
 	}
 
 	.modal.recall .modal-title {
@@ -1631,6 +1640,12 @@ button.btn-close {
 		margin-right: 0px;
 	}
 	.tab-content .tab-pane.subscription .input_div input{
+		width: 100%;
+	}
+	.tabs .nav-tabs .nav-link{
+		width: 100%;
+	}
+	.patient_detail.report .input_div label {
 		width: 100%;
 	}
 }
